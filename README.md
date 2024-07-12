@@ -1,5 +1,6 @@
 # Curso Udemy
 
 ![Portada](images/image.png)
-[Python Types](https://www.udemy.com/course/pythontypes/)
+
+[The Essential Guide to Type Annotations in Python](https://www.udemy.com/course/pythontypes/)
 
