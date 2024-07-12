@@ -1,31 +1,31 @@
 # Exercise 1
-text = 'Hello, world!'
-percent = 3.14
-is_connected = False
-people = ['Mario', 'Luigi', 'James']
+text: str = 'Hello, world!'
+percent: float = 3.14
+is_connected: bool = False
+people: list[str] = ['Mario', 'Luigi', 'James']
 
 
 # Exercise 2
 class Fruit:
-    def __init__(self, name, grams):
+    def __init__(self, name: str, grams: float) -> None:
         self.name = name
         self.grams = grams
 
 
-def return_fruit_description(fruit):
+def return_fruit_description(fruit: Fruit) -> str:
     return f'This {fruit.name} weighs {fruit.grams} grams.'
 
 
-apple = Fruit('Apple', 50)
-description = return_fruit_description(apple)
+apple: Fruit = Fruit('Apple', 50)
+description: str = return_fruit_description(apple)
 print(description)
 
 
 # Exercise 3
-def get_user(user_id):
-    users = {0: 'Mario', 1: 'Luigi'}
+def get_user(user_id: int) -> str | None:
+    users: dict[int, str] = {0: 'Mario', 1: 'Luigi'}
     return users.get(user_id)
 
 
-first_user = get_user(0)
-print(first_user )
+first_user: str | None = get_user(0)
+print(first_user)
